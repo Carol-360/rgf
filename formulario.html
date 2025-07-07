@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Realiza tu Pedido</title><IMG SRC="Logo_cecytem.JPEG" WIDTH="155" HEIGHT="105">
+  <link href="estilos.css" rel="stylesheet" title="Default Style" />
+</head>
+<body>
+  <header>
+    <h1>Pastelería "Fresita"</h1>
+    <CENTER>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Pasteles</a>
+      <a href="formulario.html">Pedido</a>
+    </CENTER>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Formulario de Pedido</h2>
+    <CENTER>
+<form action="CONEXION.PHP" method="POST">
+  
+  <label>Numero de pedido</label>
+  <input type="text" name="Numerodepedido"><br><br>
+
+  <label>Tipo de pastel</label>
+  <select name="pasteldeseado">
+    <option value="Chocolate">Chocolate</option>
+    <option value="Yogurt de durazno">Yogurt de durazno</option>
+    <option value="Tres leches">Tres leches</option>
+    <option value="Fresas con crema">Fresas con crema</option>
+    <option value="Piña coco">Piña coco</option>
+  </select><br><br>
+
+  <label>Tamaño</label>
+  <select name="Tamaño">
+    <option value="Grande">Grande</option>
+    <option value="Mediano">Mediano</option>
+    <option value="Chico">Chico</option>
+  </select><br><br>
+
+  <label>Diseño</label>
+  <select name="Diseño">
+    <option value="Chantilly">Chantilly</option>
+    <option value="Fondant">Fondant</option>
+  </select><br><br>
+
+  <!-- Campo oculto para la acción -->
+  <input type="hidden" name="accion" value="insertar">
+
+  <input type="submit" value="Enviar pedido"><br><br>
+
+</form>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pastelería Dulce Sabor</p>
+     <p>Alumno:Carolina Guillermo Martinez Grupo: 403</p>
+  </footer>
+</body>
+</html>
